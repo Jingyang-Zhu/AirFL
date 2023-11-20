@@ -1,0 +1,10 @@
+python main.py --num_local_update 5 --num_communication 500 --case 2
+python main.py --num_local_update 1 --num_communication 500 --case 0
+python main.py --num_local_update 1 --num_communication 500 --noise_var 0.1 --case 0
+
+python main.py --dataset cifar10 --input_channels 3 --dataset_path data/cifar10 --num_local_update 5 --num_communication 500 --noise_var 0 --case 2 --batch_size 50 --lr 0.05 --seed 2021
+python main.py --num_local_update 1 --num_communication 500 --noise_var 0.0001 --case 3
+
+
+python main.py --dataset cifar10 --input_channels 3 --dataset_path data/cifar10 --num_local_update 5 --num_communication 500 --noise_var 0 --case 2 --seed 1
+python main.py --dataset cifar10 --input_channels 3 --dataset_path data/cifar10 --num_local_update 1 --num_communication 500 --noise_var 0 --case 0 --seed 1
